@@ -2,8 +2,9 @@
   "name": "github-pubkey-auto-register",
   "version": "1.0.0",
   "description": "A command-line tool to register public key to GitHub",
-  "main": "",
+  "main": "src/bootstrap.ts",
   "scripts": {
+    "start": "ts-node --files -r tsconfig-paths/register src/bootstrap.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "mangano-ito",
