@@ -1,0 +1,1 @@
+export default (): string => `${process.env['HOME']}/.ssh/id_rsa.pub`;
