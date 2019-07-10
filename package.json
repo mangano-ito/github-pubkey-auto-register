@@ -1,0 +1,20 @@
+{
+  "name": "github-pubkey-auto-register",
+  "version": "1.0.0",
+  "description": "A command-line tool to register public key to GitHub",
+  "main": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "mangano-ito",
+  "license": "MIT",
+  "dependencies": {
+    "@types/command-line-args": "^5.0.0",
+    "@types/node-fetch": "^2.3.0",
+    "command-line-args": "^5.1.1",
+    "node-fetch": "^2.3.0",
+    "ts-node": "^8.0.3",
+    "tsconfig-paths": "^3.8.0",
+    "typescript": "^3.4.2"
+  }
+}
