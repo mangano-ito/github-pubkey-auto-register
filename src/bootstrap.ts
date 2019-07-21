@@ -1,3 +1,3 @@
-import register from "#/domain/controller/register";
+import register from "&/controller/register";
 
 register();

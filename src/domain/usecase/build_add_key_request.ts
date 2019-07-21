@@ -1,4 +1,4 @@
-import PublicKeyAddRequest from '../model/AddPublicKeyRequest';
+import PublicKeyAddRequest from '&/model/AddPublicKeyRequest';
 
 export default (title: string, pubkey: string): PublicKeyAddRequest => {
     return {
