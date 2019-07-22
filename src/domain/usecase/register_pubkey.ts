@@ -1,5 +1,5 @@
 import fetch from 'node-fetch';
-import PublicKeyAddRequest from '../model/AddPublicKeyRequest';
+import PublicKeyAddRequest from '&/model/AddPublicKeyRequest';
 
 export default async (request: PublicKeyAddRequest, additionalHeaders: {} = {}): Promise<any> => {
     const url = 'https://api.github.com/user/keys';

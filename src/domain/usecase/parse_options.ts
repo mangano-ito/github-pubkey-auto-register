@@ -1,5 +1,5 @@
 import commandLineArgs, { OptionDefinition } from 'command-line-args';
-import Options from '../model/Options';
+import Options from '&/model/Options';
 
 const optionDefinitions: OptionDefinition[] = [
     {
