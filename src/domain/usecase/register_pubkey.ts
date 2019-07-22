@@ -15,11 +15,18 @@ export default async (request: PublicKeyAddRequest, additionalHeaders: {} = {}):
         }
     );
     const body = await result.json();
-    if (!result.ok) {
-        // 401: Authorization failed.
-        // 422: Validation failed.
-        throw new Error(`${result.status}: ${body.message}`)
+    if (result.ok) {
+        return body;
     }
 
-    return body;
+    switch (result.status) {
+        case 401:
+            throw new Error('401: Authorization failed. Check your GitHub credentials.');
+
+        case 422:
+            throw new Error('422: Validation failed. Your key is already registered or maybe corrupt.');
+
+        default:
+            throw new Error(`${result.status}: ${body.message}`)
+    }
 }
