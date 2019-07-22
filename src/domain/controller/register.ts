@@ -12,7 +12,8 @@ export default async (): Promise<void> => {
     try {
         await register_pubkey(request, auth);
     } catch (e) {
-        console.error(`public key registration failed: ${e.message}`);
+        console.error(`public key registration failed!`);
+        console.error(e.message);
         return;
     }
     console.info('your public key is successfully registered!');
