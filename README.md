@@ -32,7 +32,7 @@ You can also provide your GitHub password instead of a token (not recommended):
 
 ```bash
 export GITHUB_USER_ID='your-id';
-export GITHUB_TOKEN='your-access-token';
+export GITHUB_PASSWORD='your-password';
 ```
 
 2. Run
