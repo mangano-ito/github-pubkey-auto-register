@@ -28,7 +28,7 @@ If you haven't generated a token yet or don't remember it, you can create a new 
 
 ---
 
-You can also provide your GitHub password instread of a token (not recommended):
+You can also provide your GitHub password instead of a token (not recommended):
 
 ```bash
 export GITHUB_USER_ID='your-id';
